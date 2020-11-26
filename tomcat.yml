@@ -1,8 +1,6 @@
 ---
 - hosts: 127.0.0.1
-  become: yes
-  become_user: ansadmin
-  become_method: su
+  remote_user: ansadmin
   tasks:
   - name: Install tomcat
     yum:
