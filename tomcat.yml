@@ -3,7 +3,7 @@
   become: yes
   become_user: ansadmin
   become_method: su  
-  var_files:
+  vars:
     - all.yml
   tasks:
   - name: Install tomcat
